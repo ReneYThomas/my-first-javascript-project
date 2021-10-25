@@ -44,7 +44,21 @@ for (let numbers = 8; numbers < 65; numbers = numbers + 2) {
     between 20 and 23.
 */}
 
+function showGreeting (time) {
+    if (time >= 0 && time <= 12) {
+        console.log('Good morning Beautiful')
+    } else if (time >= 13 && time <= 15) {
+        console.log('Good afternoon')
+    } else if (time >= 16 && time <= 19) {
+        console.log('Good evening')
+    } else if (time >= 20 && time <= 23) {
+        console.log('Good night gorgeous')
+    } else {
+        console.log('Sorry mi G') 
+    }   
+}
 
+showGreeting(24)
 
 
 
