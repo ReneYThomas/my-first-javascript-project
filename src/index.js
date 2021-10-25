@@ -60,5 +60,59 @@ function showGreeting (time) {
 
 showGreeting(24)
 
+{/*
+ Activity 5:
+    Write a function that accepts an integer as a parameter that represents the time of day (between 0 & 23)
+    and returns 'Good morning Beautiful' if time is between 0 & 12, 'Good afternoon' if time 
+    is between 13 & 15, Good evening if time is between 16 and 19, and ''Good night gorgeous' if time is
+    between 20 and 23.
+*/}
 
+function getGreeting (time) {
+    if (time >= 0 && time <= 12) {
+        return 'Good morning Beautiful'
+    } else if (time >= 13 && time <= 15) {
+        return 'Good afternoon'
+    } else if (time >= 16 && time <= 19) {
+        return 'Good evening'
+    } else if (time >= 20 && time <= 23) {
+        return 'Good night gorgeous'
+    } else {
+        return 'Sorry mi G'
+    }
+}
+
+let greeting = getGreeting(12)
+ 
+function getGreeting2 (time) {
+    let greeting = ''
+    
+    if (time >= 0 && time <= 12) {
+       greeting = 'Good morning Beautiful'
+    } else if (time >= 13 && time <= 15) {
+        greeting = 'Good afternoon'
+    } else if (time >= 16 && time <= 19) {
+       greeting = 'Good evening'
+    } else if (time >= 20 && time <= 23) {
+       greeting =  'Good night gorgeous'
+    } else {
+        greeting = 'Sorry mi G'
+    }
+
+    return greeting 
+}
+
+let greeting2 = getGreeting2(4)
+console.log(greeting2)
+
+{/*
+ Activity 6:
+    Write a function that accepts an array of integers as its only argument and calculates
+    their sum. If the sum is over 200, then the function should return 'Well done! Your total score was <totalScore>' 
+    else, return 'Good try. Your total score was <totalScore>'.
+
+    Call the function and print out the value of sum to the screen.
+
+    Note: Based on Activity 2
+*/}
 
